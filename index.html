@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js"></script>
+    <title>calculater</title>
+</head>
+
+<body>
+    <h1 class="head">Calculator</h1>
+    <style>
+        body{
+            background-color: #bbd0ff;
+        }
+        .calc-main {
+            margin: auto;
+            background-color: lightblue;
+            position: relative;
+            height: 220px;
+            width: 120px;
+            border-radius: 5%;
+            border: 1px solid black;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+        }
+
+        .calc-display {
+            border: 1px solid black;
+            background-color:white;
+            position: absolute;
+            height: 40px;
+            width: 100px;
+            left: 5%;
+            top: 3%;
+            border-radius: 10%;
+        }
+
+        .first-row {
+            left: 5%;
+            top: 30%;
+            position: absolute;
+            /* border: 2px solid black; */
+        }
+        .second-row{
+            left: 5%;
+            top: 50%;
+            position: absolute;
+            /* border: 2px solid black; */
+        }
+        .third-row{
+            left: 5%;
+            top: 70%;
+            position: absolute;
+            /* border: 2px solid black; */
+        }
+        .fourth-row{
+            left: 5%;
+            top: 85%;
+            position: absolute;
+            /* border: 2px solid black; */
+        }
+        .fourth-row .button-clear{
+            background-color: burlywood;
+        }
+        .second-row .button-minus{
+            width: 24px;
+            background-color: burlywood;
+        }
+        .third-row .button-div{
+            width:24px ;
+            background-color: burlywood;
+        }
+        .fourth-row .button-null{
+            width: 24px;
+            text-align: center;
+            background-color:burlywood;
+        }
+        .head{
+            overflow: hidden;
+            text-align: center;
+        }
+    </style>
+    <section>
+        <!-- section calculater start -->
+        <div class="calc-main">
+            <input class="calc-display" type="text" id="dis_play">
+        <div class="first-row">
+            <button type="button" class="button-1" onclick="one()">1</button>
+            <button type="button" class="button-2" onclick="two()">2</button>
+            <button type="button" class="button-3" onclick="three()">3</button>
+            <button type="button" class="button-plus" onclick="plus()" style="background-color: burlywood;">+</button>
+        </div>
+        <div class="second-row">
+            <button type="button" class="button-4" onclick="four()">4</button>
+            <button type="button" class="button-5" onclick="five()">5</button>
+            <button type="button" class="button-6" onclick="six()">6</button>
+            <button type="button" class="button-minus" onclick="minus()">-</button>
+        </div>
+        <div class="third-row">
+            <button type="button" class="button-7"onclick="seven()">7</button>
+            <button type="button" class="button-8" onclick="eight()">8</button>
+            <button type="button" class="button-9" onclick="nine()">9</button>
+            <button type="button" class="button-div" onclick="div()">/</button>
+        </div>
+        <div class="fourth-row">
+            <button type="button" class="button-clear" onclick="clearr()">C</button>
+            <button type="button" class="button-equal" onclick="equal()" style="background-color: burlywood;">=</button>
+            <button type="button" class="button-mult"onclick="mult()" style="background-color: burlywood;">*</button>
+            <button type="button" class="button-zero" onclick="zero()">0</button>
+        </div>
+        <!-- section calculater end -->
+
+    </section>
+</body>
+
+</html>
